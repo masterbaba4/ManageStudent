@@ -12,7 +12,10 @@
         <form action="" method="POST">
             <input type="submit" name="admin_login" value="Admin Login">
             <input type="submit" name="student_login" value="Student Login">
-
+            <input type="submit" name="teacher_login" value="Teacher Login">
+<br><br><br>
+            <input type="submit" name="student_reg" value="New Student Registration">
+            <input type="submit" name="teacher_reg" value="New Teacher Registration">
         </form>
         <?php
         if(isset($_POST['admin_login'])){
@@ -20,6 +23,15 @@
         }
         if(isset($_POST['student_login'])){
             header("Location: student_login.php");
+        }
+        if(isset($_POST['teacher_login'])){
+            header("Location: teacher_login.php");
+        }
+        if(isset($_POST['student_reg'])){
+            header("Location: student_reg_form.php");
+        }
+        if(isset($_POST['teacher_reg'])){
+            header("Location: teacher_reg_form.php");
         }
         ?>
     </center>
