@@ -17,7 +17,7 @@ include("connection.php");
     
 <div class="container">
     <form action="#" method="POST">
-    <div class="title">Student REGISTRATION FORM</div>
+    <div class="title">Teacher REGISTRATION FORM</div>
     <div class="form">
 
         <div class="input_field">
