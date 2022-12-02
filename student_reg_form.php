@@ -11,7 +11,8 @@ include("connection.php");
     <meta charset="utf-8">
     <meta nmae="viewport"content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-       <title>REGISTRATION</title>   
+       <title>REGISTRATION</title> 
+       <link rel="stylesheet" type="text/css" href="style.css">  
 </head> 
 <body>
     
