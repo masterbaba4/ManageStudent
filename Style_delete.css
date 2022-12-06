@@ -8,9 +8,9 @@ body {
 
     align-items: center;
 
-    height: 100vh;
+    /* height: 100vh; */
 
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -72,23 +72,23 @@ label {
 
 }
 
-button {
+/* button { */
 
-    float: right;
+    /* float: right; */
 
-    background: rgb(35, 174, 202);
+    /* background: rgb(35, 174, 202); */
 
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
 
-    color: #fff;
+    /* color: #fff; */
 
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
-    margin-right: 10px;
+    /* margin-right: 10px; */
 
-    border: none;
+    /* border: none; */
 
-}
+/* } */
 
 button:hover{
 

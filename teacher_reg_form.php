@@ -20,6 +20,10 @@ include("connection.php");
     <form action="#" method="POST">
     <div class="title">Teacher REGISTRATION FORM</div>
     <div class="form">
+    <div class="input_field">
+            <label>ID</label>
+            <input type="text" class="input" name="ID"required>
+        </div>
 
         <div class="input_field">
             <label>s_no</label>
@@ -48,7 +52,7 @@ include("connection.php");
      
         <div class="input_field">
     <label>Subject </label>
-    <input type="" class="input"name="Subject"required>
+    <input type="" class="input"name="subject"required>
 </div>
 <div class="input_field">
     <label>contact </label>
@@ -58,10 +62,7 @@ include("connection.php");
     <label>Address </label>
     <input type="" class="input"name="Address"required>
 </div>
-<div class="input_field">
-    <label>Landmark </label>
-    <input type="" class="input"name="landmark"required>
-</div>
+
        
        
 
@@ -94,6 +95,7 @@ include("connection.php");
 
 if($_POST['register'])
 {
+    $ID   = $_POST['ID'];
     $s_no   = $_POST['s_no'];
     $contact   = $_POST['contact'];
     $pwd     = $_POST['password']; 
@@ -102,12 +104,12 @@ if($_POST['register'])
     $email   = $_POST['email'];
     $address   = $_POST['address'];
     $subject = $_POST['subject'];
-    $landmark = $_POST['landmark'];
+    
 
 
    
-     $query=  "INSERT INTO teachers values( '$s_no','$name','$email','$pwd','$subject','$contact',
-      '$address','$landmark')";
+     $query=  "INSERT INTO teachers values( '$ID','$s_no','$name','$email','$pwd','$subject','$contact',
+      '$address')";
 
 $data =mysqli_query($conn,$query);
 
