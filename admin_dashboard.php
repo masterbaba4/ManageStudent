@@ -89,6 +89,7 @@
     <div id=""><br><br>
     <div id="s_search" >
     <?php
+    error_reporting(0);
     if (isset($_POST['search_student'])) {
     ?>
         <center>
@@ -101,6 +102,7 @@
     
     
     <?php
+    error_reporting(0);
     }
     include("connection.php");
         if (isset($_POST['search_roll_number_search'])) {
@@ -163,6 +165,8 @@
     
     
     <?php
+    error_reporting(0);
+    
     }
     include("connection.php");
         if (isset($_POST['search_roll_number_edit'])) {

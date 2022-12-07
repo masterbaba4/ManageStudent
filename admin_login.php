@@ -12,8 +12,8 @@
     <center><br>
         <h2>Admin Login</h2><br>
         <form action="" method="POST">
-            <input type="text" name="email" required><br><br>
-            <input type="password" name="password" required><br><br>
+            <input type="text" name="email" placeholder="Enter your mail ID " required><br><br>
+            <input type="password" name="password" placeholder="Enter your Password " required><br><br>
             <input type="submit" name="submit">
            
 

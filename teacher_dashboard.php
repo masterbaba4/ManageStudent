@@ -142,7 +142,7 @@
                     <td>Roll Number:</td>
                     <td><input type="text" value="<?php echo $row['roll_no'];?>"></td>
                 </tr>
-                <tr>
+                <tr> 
                     <td>S Number:</td>
                     <td><input type="text" value="<?php echo $row['s_no'];?>"></td>
                 </tr>

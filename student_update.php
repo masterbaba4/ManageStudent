@@ -18,7 +18,7 @@ include("connection.php");
     
 <div class="container">
    <?php 
-$sql = "select * from students where roll_no='$roll_no'";
+$sql = "select * from students where roll_no=$_POST'roll_no'";
 
 $result = $conn->query($sql);
 
