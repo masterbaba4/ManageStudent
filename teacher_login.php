@@ -11,8 +11,8 @@
     <center><br>
         <h2>Teacher Login</h2><br>
         <form action="" method="POST">
-            <input type="text" name="email" required><br><br>
-            <input type="password" name="password" required><br><br>
+        <input type="text"   name="email" placeholder="Enter your mail ID "  required><br><br>
+            <input type="text"   name="password" placeholder="Enter your password " required><br><br>
             <input type="submit" name="submit">
            
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
-    <link rel="stylesheet" type="text/css" href="Style_delete.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <?php
     session_start();
    
@@ -18,7 +18,7 @@
         <center><br><h1>Student Management system  </h1><br> <?php echo $_SESSION ['email']; ?> <br> Name:<?php echo $_SESSION ['name']; ?></center>
     </div>
     <div id="left_side">
-        <form action="" method="post">
+        <form action="" method="POST">
             <table>
                 <tr>
                     <!-- <td> -->
@@ -29,27 +29,7 @@
                         <input type="submit" name="delete_student" value="Delete student">
                     <!-- </td> -->
                 </tr>
-                <tr>
-                    <td>
-                       
-                        <!-- <input type="submit" name="edit_student" value="Edit student"> -->
-                       
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
-                        <!-- <input type="submit" name="create_student" value="Create student"> -->
-                       
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
-                        <!-- <input type="submit" name="delete_student" value="Delete student"> -->
-                        
-                    </td>
-                </tr>
+                
             </table>
         </form>
         <form action="" method="post">
@@ -57,31 +37,11 @@
                 <tr>
                     <td>
                         <input type="submit" name="search_teacher" value="Search Teacher">
-                      
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
                         <input type="submit" name="edit_teacher" value="Edit Teacher">
-                       
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
                         <input type="submit" name="create_teacher" value="Create Teacher">
-                       
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       
                         <input type="submit" name="delete_teacher" value="Delete Teacher">
-                        
                     </td>
-                </tr>
+              
             </table>
         </form>
 
@@ -93,7 +53,7 @@
     if (isset($_POST['search_student'])) {
     ?>
         <center>
-        <form action="" method="post">
+        <form action="" method="POST">
             Enter roll Number:
             <input type="text" name="roll_no">
             <input type="submit" name="search_roll_number_search" value="Search">
@@ -165,7 +125,7 @@
     
     
     <?php
-    error_reporting(0);
+    
     
     }
     include("connection.php");
@@ -179,7 +139,7 @@
             <table>
                 <tr>
                     <td>Roll Number:</td>
-                    <td><input type="text" name="roll_no" value="<?php echo $row['roll_no'];?>" disabled></td>
+                    <td><input type="text" name="roll_no" value="<?php echo $row['roll_no'];?>"></td>
                 </tr>
                 <tr>
                     <td>S Number:</td>
@@ -231,7 +191,7 @@
     if (isset($_POST['delete_student'])) {
     ?>
         <center>
-        <form action="" method="post">
+        <form action="" method="POST">
             Enter roll Number:
             <input type="text" name="roll_no">
             <input type="submit" name="search_roll_number_delete" value="Search">
@@ -252,7 +212,7 @@
             <table>
                 <tr>
                     <td>Roll Number:</td>
-                    <td><input type="text" name="roll_no" value="<?php echo $row['roll_no'];?>" disabled></td>
+                    <td><input type="text" name="roll_no" value="<?php echo $row['roll_no'];?>" ></td>
                 </tr>
                 <tr>
                     <td>Name:</td>
@@ -298,7 +258,7 @@
     if (isset($_POST['search_teacher'])) {
     ?>
         <center>
-        <form action="" method="post">
+        <form action="" method="POST">
             Enter ID Number:
             <input type="text" name="ID">
             <input type="submit" name="search_ID_search_teachers" value="Search">
@@ -372,7 +332,7 @@
     if (isset($_POST['edit_teacher'])) {
     ?>
         <center>
-        <form action="" method="post">
+        <form action="" method="POST">
             Enter ID Number:
             <input type="text" name="ID">
             <input type="submit" name="search_ID_edit_teacher" value="Search">
@@ -453,7 +413,7 @@
     if (isset($_POST['delete_teacher'])) {
     ?>
         <center>
-        <form action="" method="post">
+        <form action="" method="POST">
             Enter ID Number:
             <input type="text" name="ID">
             <input type="submit" name="search_ID_delete_teacher" value="Search">

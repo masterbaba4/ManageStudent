@@ -169,6 +169,17 @@
     </div>
    
     </div><br><br>
+    <div>
+        <div>
+            <?php
+            if (isset($_POST['create_student'])) {
+                header("Location: student_reg_form.php");
+            }
+        ?> 
+         
+       
+        </div>
+    </div>
 
     
 

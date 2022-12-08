@@ -9,7 +9,7 @@
 </head>
 <body>
     <center><br>
-        <h2>Student management system</h2><br>
+        <h1>Student management system</h1><br>
         <form action="" method="POST">
             <input type="submit" name="admin_login" value="Admin Login">
             <input type="submit" name="student_login" value="Student Login">

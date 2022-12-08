@@ -9,10 +9,10 @@ body {
     align-items: center;
 
     
-background-image: url("login");
-background-repeat: no-repeat;
-background-size: cover;
-    flex-direction: column;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
 
 }
 
@@ -24,7 +24,7 @@ background-size: cover;
 
 }
 
-form {
+ form { 
 
     /* width: 1000px; */
     /* height: 1000px; */
@@ -39,7 +39,7 @@ form {
     -45px -45px -45px;
     color: rgb(160, 236, 20);
 
-}
+} 
 
 .admin_login,.student_login,.teacher_login,.log_out
 {
@@ -51,9 +51,10 @@ form {
 h1 {
 
     text-align: center;
+    
 
     margin-bottom: 40px;
-    color: aqua;
+    color: rgb(255, 0, 0);
 
 }
 
@@ -160,3 +161,8 @@ a:hover{
     opacity: .7;
 
 }
+
+/* table{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+} */
