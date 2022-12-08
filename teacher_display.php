@@ -18,7 +18,7 @@ include("connection.php");
 error_reporting(0);  
 
 
-$query= "SELECT * FROM students";
+$query= "SELECT * FROM teachers";
 $data = mysqli_query( $conn ,$query);
 
 $total= mysqli_num_rows($data);
@@ -32,13 +32,15 @@ if($total != 0)
     <h2 align ="center"><mark>Displaying All Students Records</mark></h2>
     <table border="2px" cellspacing="7"  align="center">
         <tr>
-        <th width="8%">S_no</th>
-        <th width="8%">Roll_no</th> 
+        <th width="8%">ID</th>
+        <th width="8%">s_no</th> 
         <th width="6%">Name</th>
-         <th width="20%">Fathers name</th>
+        
           <th width="20%">Email</th>
           <th width="10%">password</th>
-          <th width="15%">Class</th>
+          <th width="15%">subject</th>
+          <th width="15%">Contact No</th>
+          <th width="15%">Address</th>
 </tr>
    
     
@@ -49,13 +51,16 @@ if($total != 0)
     while($result= mysqli_fetch_assoc($data))
     {
       echo"<tr >
+      <td >".$result['ID']."</td>
       <td >".$result['s_no']."</td>
-      <td>".$result['roll_no']."</td>
+      
       <td>".$result['name']."</td> 
-      <td>".$result['fathers_name']."</td>
+      
       <td>".$result['email']."</td>
       <td>".$result['password']."</td>
-      <td>".$result['class']."</td>
+      <td>".$result['subject']."</td>
+      <td >".$result['contact_no']."</td>
+      <td >".$result['address']."</td>
       
 </tr>"; 
     }

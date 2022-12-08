@@ -15,7 +15,8 @@
 <body>
   
     <div id = "header">
-        <center><br><h1>Student Management system  </h1><br> <?php echo $_SESSION ['email']; ?> <br> Name:<?php echo $_SESSION ['name']; ?></center>
+        <center><br><h1>Student Management system  </h1><br> Student Email: <?php echo $_SESSION ['email']; ?> <br> Name:<?php echo $_SESSION ['name']; ?></center>
+        <a href="logout.php"> LogOut</a>
     </div>
     <div id="left_side">
         <form action="" method="post">

@@ -60,26 +60,9 @@ include("connection.php");
 </div>
 <div class="input_field">
     <label>Address </label>
-    <input type="" class="input"name="Address"required>
+    <input type="" class="input"name="address"required>
 </div>
 
-       
-       
-
-
-    
-            
-
-
-    
-        
-        
-    <div class="input_field terms">
-        <label class="check">
-     <input type="checkbox">
-     <span class="checkmark"> agree to terms and conditions</span> </label>
-            
-    </div>  
     
     <div class="input_field">
     <input type="submit" value="register" class="btn" name ="register">

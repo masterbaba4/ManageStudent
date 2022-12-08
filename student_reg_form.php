@@ -56,23 +56,7 @@ include("connection.php");
     <label>class </label>
     <input type="" class="input"name="class"required>
 </div>
-       
-       
-
-
-    
-            
-
-
-    
         
-        
-    <div class="input_field terms">
-        <label class="check">
-     <input type="checkbox">
-     <span class="checkmark"> agree to terms and conditions</span> </label>
-            
-    </div>  
     
     <div class="input_field">
     <input type="submit" value="register" class="btn" name ="register">

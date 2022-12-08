@@ -76,7 +76,7 @@ input {
 
 label {
 
-    color: rgb(233, 22, 22);
+    color: rgb(226, 233, 22);
 
     font-size: 18px;
 
@@ -140,11 +140,11 @@ a {
 
     float: right;
 
-    background: rgb(173, 233, 245);
+    background: rgb(176, 244, 244);
 
     padding: 10px 15px;
 
-    color: #fff;
+    color: rgb(216, 22, 22);
 
     border-radius: 10px;
 

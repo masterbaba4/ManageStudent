@@ -15,7 +15,8 @@
 <body>
   
     <div id = "header">
-        <center><br><h1>Student Management system  </h1><br> <?php echo $_SESSION ['email']; ?> <br> Name:<?php echo $_SESSION ['name']; ?></center>
+        <center><br><h1>Student Management system  </h1><br> Admin Email: <?php echo $_SESSION ['email']; ?> <br> Name:<?php echo $_SESSION ['name']; ?></center>
+        <a href="logout.php"> LogOut</a>
     </div>
     <div id="left_side">
         <form action="" method="POST">
@@ -27,7 +28,8 @@
                         <input type="submit" name="edit_student" value="Edit student">
                         <input type="submit" name="create_student" value="Create student">
                         <input type="submit" name="delete_student" value="Delete student">
-                    <!-- </td> -->
+                        <input type="submit" name="view_student" value="View All student">
+                        <!-- </td> -->
                 </tr>
                 
             </table>
@@ -40,6 +42,7 @@
                         <input type="submit" name="edit_teacher" value="Edit Teacher">
                         <input type="submit" name="create_teacher" value="Create Teacher">
                         <input type="submit" name="delete_teacher" value="Delete Teacher">
+                        <input type="submit" name="view_teacher" value="View All Teacher">
                     </td>
               
             </table>
@@ -245,6 +248,17 @@
             <?php
             if (isset($_POST['create_student'])) {
                 header("Location: student_reg_form.php");
+            }
+        ?> 
+         
+       
+        </div>
+    </div>
+    <div>
+        <div>
+            <?php
+            if (isset($_POST['view_student'])) {
+                header("Location: student_display.php");
             }
         ?> 
          
@@ -467,6 +481,17 @@
             <?php
             if (isset($_POST['create_teacher'])) {
                 header("Location: teacher_reg_form.php");
+            }
+        ?> 
+         
+       
+        </div>
+    </div>
+    <div>
+        <div>
+            <?php
+            if (isset($_POST['view_teacher'])) {
+                header("Location: teacher_display.php");
             }
         ?> 
          
