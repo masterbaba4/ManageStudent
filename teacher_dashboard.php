@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin dashboard</title>
+    <title>Teacher dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <?php
     session_start();
@@ -57,7 +57,7 @@
                     <td>
                         <input type="submit" name="search_teacher" value="Search Teacher">
                         <input type="submit" name="edit_teacher" value="Edit Teacher">
-                        <input type="submit" name="create_teacher" value="Create Teacher">
+                        
                         
                         <input type="submit" name="view_teacher" value="View All Teacher">
                     </td>
@@ -156,7 +156,7 @@
         $query_run = mysqli_query($conn, $query);
         while($row = mysqli_fetch_assoc($query_run)){
             ?>
-            <form action="edit_student.php" method="POST">
+            <form action="edit_student_teacher.php" method="POST">
             <table>
                 <tr>
                     <td>Roll Number:</td>
@@ -229,7 +229,7 @@
         $query_run = mysqli_query($conn, $query);
         while($row = mysqli_fetch_assoc($query_run)){
             ?>
-            <form action="delete_student.php" method="POST">
+            <form action="delete_student_teacher.php" method="POST">
             <table>
                 <tr>
                     <td>Roll Number:</td>
@@ -385,41 +385,41 @@
         $query_run = mysqli_query($conn, $query);
         while($row = mysqli_fetch_assoc($query_run)){
             ?>
-            <form action="edit_teacher.php" method="POST">
+            <form action="edit_teacher_teacher.php" method="POST">
             <table>
                 <tr>
                     <td>ID:</td>
-                    <td><input type="text" value="<?php echo $row['ID'];?>" ></td>
+                    <td><input type="text" name="ID" value="<?php echo $row['ID'];?>" ></td>
                 </tr>
                 <tr>
                     <td>S Number:</td>
-                    <td><input type="text" value="<?php echo $row['s_no'];?>" ></td>
+                    <td><input type="text" name="s_no" value="<?php echo $row['s_no'];?>" ></td>
                 </tr>
                 <tr>
                     <td>Name:</td>
-                    <td><input type="text" value="<?php echo $row['name'];?>" ></td>
+                    <td><input type="text" name="name" value="<?php echo $row['name'];?>" ></td>
                 </tr>
                
                 <tr>
                     <td>Email:</td>
-                    <td><input type="text" value="<?php echo $row['email'];?>" ></td>
+                    <td><input type="text" name="email" value="<?php echo $row['email'];?>" ></td>
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><input type="text" value="<?php echo $row['password'];?>" ></td>
+                    <td><input type="text" name="password" value="<?php echo $row['password'];?>" ></td>
                 </tr>
                 <tr>
 
                     <td>Subject:</td>
-                    <td><input type="text" value="<?php echo $row['subject'];?>" ></td>
+                    <td><input type="text" name="subject" value="<?php echo $row['subject'];?>" ></td>
                 </tr>
                  <tr>
                     <td>contact Number:</td>
-                    <td><input type="text" value="<?php echo $row['contact_no'];?>" ></td>
+                    <td><input type="text" name="contact_no" <?php echo $row['contact_no'];?>" ></td>
                 </tr>
                 <tr>
                     <td>Address:</td>
-                    <td><input type="text" value="<?php echo $row['address'];?>" ></td>
+                    <td><input type="text" name="address" value="<?php echo $row['address'];?>" ></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -466,11 +466,11 @@
         $query_run = mysqli_query($conn, $query);
         while($row = mysqli_fetch_assoc($query_run)){
             ?>
-            <form action="delete_teacher.php" method="POST">
+            <form action="delete_teacher_teacher.php" method="POST">
             <table>
                 <tr>
                     <td>ID Number:</td>
-                    <td><input type="text" name="ID" value="<?php echo $row['ID'];?>" disabled></td>
+                    <td><input type="text" name="ID" value="<?php echo $row['ID'];?>" readonly></td>
                 </tr>
                 <tr>
                     <td>Name:</td>
@@ -498,17 +498,7 @@
    
     </div><br><br>
 
-    <div>
-        <div>
-            <?php
-            if (isset($_POST['create_teacher'])) {
-                header("Location: teacher_reg_form.php");
-            }
-        ?> 
-         
-       
-        </div>
-    </div>
+    
     <div>
         <div>
             <?php

@@ -1,7 +1,7 @@
 <html>
     <head>
         
-        <title>Display</title>
+        <title>Student Display</title>
         <style>
         body{
 background: #D071f9;
@@ -34,11 +34,11 @@ if($total != 0)
         <tr>
         <th width="8%">S_no</th>
         <th width="8%">Roll_no</th> 
-        <th width="6%">Name</th>
+        <th width="16%">Name</th>
          <th width="20%">Fathers name</th>
           <th width="20%">Email</th>
           <th width="10%">password</th>
-          <th width="15%">Class</th>
+          <th width="8%">Class</th>
 </tr>
    
     

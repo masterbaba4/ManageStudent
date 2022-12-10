@@ -11,14 +11,14 @@ include("connection.php");
     <meta charset="utf-8">
     <meta nmae="viewport"content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-       <title>REGISTRATION</title> 
+       <title>STUDENT REGISTRATION</title> 
        <link rel="stylesheet" type="text/css" href="style.css">  
 </head> 
 <body>
     
 <div class="container">
     <form action="#" method="POST">
-    <div class="title">Student REGISTRATION FORM</div>
+    <div class="title">STUDENT REGISTRATION FORM</div>
     <div class="form">
 
         <div class="input_field">

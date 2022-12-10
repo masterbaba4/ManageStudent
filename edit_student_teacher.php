@@ -7,6 +7,6 @@ $query_run = mysqli_query($conn, $query);
 
 <script type="text/javascript">
 alert("Updated Sucessfully");
-window.location.href = "admin_dashboard.php";
+window.location.href = "teacher_dashboard.php";
 </script>
 

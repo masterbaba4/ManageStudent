@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin dashboard</title>
+    <title>Student dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <?php
     session_start();
@@ -132,32 +132,44 @@
         $query_run = mysqli_query($conn, $query);
         while($row = mysqli_fetch_assoc($query_run)){
             ?>
+            <form action="edit_student_student.php" method="POST">
             <table>
                 <tr>
                     <td>Roll Number:</td>
-                    <td><input type="text" value="<?php echo $row['roll_no'];?>"></td>
+                    <td><input type="text" name="roll_no" value="<?php echo $row['roll_no'];?>"></td>
                 </tr>
                 <tr>
                     <td>S Number:</td>
-                    <td><input type="text" value="<?php echo $row['s_no'];?>"></td>
+                    <td><input type="text" name="s_no" value="<?php echo $row['s_no'];?>"></td>
                 </tr>
                 <tr>
                     <td>Name:</td>
-                    <td><input type="text" value="<?php echo $row['name'];?>"></td>
+                    <td><input type="text" name="name" value="<?php echo $row['name'];?>"></td>
                 </tr>
                 <tr>
                     <td>Fathers name:</td>
-                    <td><input type="text" value="<?php echo $row['fathers_name'];?>"></td>
+                    <td><input type="text" name="fathers_name" value="<?php echo $row['fathers_name'];?>"></td>
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><input type="text" value="<?php echo $row['email'];?>"></td>
+                    <td><input type="text" name="email" value="<?php echo $row['email'];?>"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="password" value="<?php echo $row['password'];?>"></td>
                 </tr>
                 <tr>
                     <td>Class:</td>
-                    <td><input type="text" value="<?php echo $row['class'];?>"></td>
+                    <td><input type="text" name="class" value="<?php echo $row['class'];?>"></td>
+                </tr><br>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="edit" value="Save"></td>
                 </tr>
+
             </table>
+            </form>
+            
 
 
       <?php  }
